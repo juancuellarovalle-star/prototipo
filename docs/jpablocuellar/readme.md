@@ -28,16 +28,25 @@ facilitar estos pagos."*
 Decidí quedarme con la **aplicación que centraliza los pagos de los servicios públicos en un solo lugar**, porque es la que más se ajusta a la problemática.  
 Es más práctica que las otras dos ideas, ayuda a evitar confusiones y permite tener todo organizado en un mismo espacio, lo cual facilita que la familia pueda cumplir con los pagos a tiempo sin complicarse tanto.
 ## ÁRBOL DE PROBLEMAS
-```mermaid
 graph TD
-    A[Problemas en el pago de servicios públicos]
+    %% Nodo central: Problema
+    P[Problemas en el pago de servicios públicos]
 
-    %% Consecuencias
-    A --> B1[Conflictos familiares]
-    A --> B2[Pagos atrasados]
-    A --> B3[Problemas económicos]
+    %% Consecuencias arriba
+    B1[Conflictos familiares]
+    B2[Pagos atrasados]
+    B3[Problemas económicos]
 
-    %% Causas
-    A --> C1[Falta de organización]
-    A --> C2[Olvido de fechas]
-    A --> C3[Confusión con recibos]
+    %% Causas abajo
+    C1[Falta de organización]
+    C2[Olvido de fechas]
+    C3[Confusión con recibos]
+
+    %% Organización del flujo
+    B1 --> P
+    B2 --> P
+    B3 --> P
+
+    P --> C1
+    P --> C2
+    P --> C3
