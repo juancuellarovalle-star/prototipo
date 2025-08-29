@@ -1,3 +1,4 @@
-##integrantes##
-jpablocuellar@ucompensar.edu.co
-jestebanaponte@ucompensar.edu.co
+##integrantes
+-jpablocuellar@ucompensar.edu.co
+
+-jestebanaponte@ucompensar.edu.co
