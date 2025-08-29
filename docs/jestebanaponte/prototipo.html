@@ -1,0 +1,73 @@
+**codigo HTML**
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>SkillUp Familia — Academia Digital de Habilidades Prácticas</title>
+<style>
+:root{
+--bg:#0f172a; /* slate-900 */
+--panel:#111827; /* gray-900 */
+--card:#0b1220; /* darker panel */
+--muted:#94a3b8; /* slate-400 */
+--text:#e5e7eb; /* gray-200 */
+--brand:#22c55e; /* green-500 */
+--brand-2:#06b6d4; /* cyan-500 */
+--accent:#f59e0b; /* amber-500 */
+--danger:#ef4444; /* red-500 */
+--ok:#14b8a6; /* teal-500 */
+--shadow: 0 12px 30px rgba(0,0,0,.35), 0 2px 10px rgba(0,0,0,.2);
+--radius: 16px;
+}
+*{box-sizing:border-box}
+body{margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica Neue, Arial, "Apple Color Emoji", "Segoe UI Emoji"; background: radial-gradient(1200px 800px at 20% -10%, rgba(6,182,212,.12), transparent 60%), radial-gradient(1000px 800px at 100% 0%, rgba(34,197,94,.12), transparent 60%), var(--bg); color:var(--text);}
+a{color:inherit; text-decoration:none}
+.container{max-width:1100px; padding:0 20px; margin:0 auto}
+header{position:sticky; top:0; z-index:20; backdrop-filter: blur(8px); background: rgba(15,23,42,.75); border-bottom:1px solid rgba(148,163,184,.12)}
+.nav{display:flex; align-items:center; gap:18px; padding:10px 0}
+.brand{display:flex; align-items:center; gap:10px; font-weight:800; letter-spacing:.3px}
+.brand .logo{width:36px; height:36px; border-radius:10px; background:linear-gradient(135deg, var(--brand), var(--brand-2)); display:grid; place-items:center; box-shadow:var(--shadow)}
+.brand .logo svg{filter: drop-shadow(0 4px 8px rgba(0,0,0,.35))}
+.navlinks{margin-left:auto; display:flex; gap:14px; align-items:center}
+.navlinks a{padding:8px 12px; border-radius:999px; color:var(--muted)}
+.navlinks a:hover{background:rgba(148,163,184,.12); color:var(--text)}
+.cta{background:linear-gradient(135deg, var(--brand), var(--brand-2)); color:#001b12; font-weight:700}
+
+
+.hero{padding:48px 0 10px}
+.hero-grid{display:grid; grid-template-columns: 1.15fr .85fr; gap:24px; align-items:center}
+.hero h1{font-size: clamp(28px, 5vw, 44px); line-height:1.05; margin:0 0 12px}
+.hero p{color:var(--muted); margin:0 0 20px}
+.pill{display:inline-flex; align-items:center; gap:10px; padding:8px 12px; border:1px solid rgba(148,163,184,.18); border-radius:999px; color:var(--muted)}
+.search{display:flex; gap:10px; margin:16px 0 10px}
+.search input{flex:1; padding:14px 16px; border-radius:12px; border:1px solid rgba(148,163,184,.2); background:#0b1220; color:var(--text); outline:none}
+.search input::placeholder{color:#64748b}
+.search button{padding:14px 16px; border-radius:12px; border:0; background:linear-gradient(135deg, var(--brand), var(--brand-2)); font-weight:700}
+
+
+.filters{display:flex; gap:10px; flex-wrap:wrap; margin:10px 0 0}
+.chip{padding:8px 12px; border-radius:999px; background:rgba(148,163,184,.12); border:1px dashed rgba(148,163,184,.2); color:var(--muted); cursor:pointer}
+.chip.active{background:rgba(34,197,94,.18); color:#d1fae5; border-color:rgba(34,197,94,.45)}
+
+
+.panel{background:linear-gradient(to bottom right, rgba(255,255,255,.04), rgba(255,255,255,.02)); border:1px solid rgba(148,163,184,.14); border-radius:var(--radius); box-shadow:var(--shadow)}
+
+
+.courses{padding:26px 0 40px}
+.grid{display:grid; grid-template-columns: repeat(3, 1fr); gap:18px}
+@media (max-width: 900px){ .hero-grid{grid-template-columns:1fr} .grid{grid-template-columns: repeat(2, 1fr);} }
+@media (max-width: 620px){ .grid{grid-template-columns: 1fr;} }
+
+
+.card{overflow:hidden; background:var(--card)}
+.thumb{height:140px; background:linear-gradient(135deg, rgba(34,197,94,.18), rgba(6,182,212,.18)); display:grid; place-items:center}
+.thumb svg{opacity:.8}
+.card-body{padding:14px}
+.badges{display:flex; gap:8px; margin:8px 0 10px; flex-wrap:wrap}
+.badge{font-size:12px; padding:4px 8px; border-radius:999px; background:rgba(148,163,184,.12); color:var(--muted); border:1px solid rgba(148,163,184,.18)}
+.title{font-weight:800; letter-spacing:.2px}
+.meta{display:flex; align-items:center; gap:10px; color:var(--muted); font-size:14px}
+.price{margin-left:auto; font-weight:800; color:#d1fae5}
