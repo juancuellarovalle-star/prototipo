@@ -1,73 +1,157 @@
-**codigo HTML**
-
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>SkillUp Familia — Academia Digital de Habilidades Prácticas</title>
-<style>
-:root{
---bg:#0f172a; /* slate-900 */
---panel:#111827; /* gray-900 */
---card:#0b1220; /* darker panel */
---muted:#94a3b8; /* slate-400 */
---text:#e5e7eb; /* gray-200 */
---brand:#22c55e; /* green-500 */
---brand-2:#06b6d4; /* cyan-500 */
---accent:#f59e0b; /* amber-500 */
---danger:#ef4444; /* red-500 */
---ok:#14b8a6; /* teal-500 */
---shadow: 0 12px 30px rgba(0,0,0,.35), 0 2px 10px rgba(0,0,0,.2);
---radius: 16px;
-}
-*{box-sizing:border-box}
-body{margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica Neue, Arial, "Apple Color Emoji", "Segoe UI Emoji"; background: radial-gradient(1200px 800px at 20% -10%, rgba(6,182,212,.12), transparent 60%), radial-gradient(1000px 800px at 100% 0%, rgba(34,197,94,.12), transparent 60%), var(--bg); color:var(--text);}
-a{color:inherit; text-decoration:none}
-.container{max-width:1100px; padding:0 20px; margin:0 auto}
-header{position:sticky; top:0; z-index:20; backdrop-filter: blur(8px); background: rgba(15,23,42,.75); border-bottom:1px solid rgba(148,163,184,.12)}
-.nav{display:flex; align-items:center; gap:18px; padding:10px 0}
-.brand{display:flex; align-items:center; gap:10px; font-weight:800; letter-spacing:.3px}
-.brand .logo{width:36px; height:36px; border-radius:10px; background:linear-gradient(135deg, var(--brand), var(--brand-2)); display:grid; place-items:center; box-shadow:var(--shadow)}
-.brand .logo svg{filter: drop-shadow(0 4px 8px rgba(0,0,0,.35))}
-.navlinks{margin-left:auto; display:flex; gap:14px; align-items:center}
-.navlinks a{padding:8px 12px; border-radius:999px; color:var(--muted)}
-.navlinks a:hover{background:rgba(148,163,184,.12); color:var(--text)}
-.cta{background:linear-gradient(135deg, var(--brand), var(--brand-2)); color:#001b12; font-weight:700}
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SkillUp Familia — Academia Digital</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-900 text-gray-200 font-sans">
 
+  <!-- Header -->
+  <header class="sticky top-0 z-20 bg-slate-900/75 backdrop-blur border-b border-slate-600/20">
+    <nav class="flex items-center gap-4 px-6 py-3 max-w-6xl mx-auto">
+      <div class="flex items-center gap-2 font-extrabold tracking-tight">
+        <div class="w-9 h-9 rounded-lg bg-gradient-to-br from-green-500 to-cyan-500 grid place-items-center shadow-lg">
+          <svg class="w-5 h-5 text-white drop-shadow-md" fill="none" stroke="currentColor" stroke-width="2"
+            viewBox="0 0 24 24">
+            <path d="M12 6v6l4 2"></path>
+          </svg>
+        </div>
+        SkillUp Familia
+      </div>
 
-.hero{padding:48px 0 10px}
-.hero-grid{display:grid; grid-template-columns: 1.15fr .85fr; gap:24px; align-items:center}
-.hero h1{font-size: clamp(28px, 5vw, 44px); line-height:1.05; margin:0 0 12px}
-.hero p{color:var(--muted); margin:0 0 20px}
-.pill{display:inline-flex; align-items:center; gap:10px; padding:8px 12px; border:1px solid rgba(148,163,184,.18); border-radius:999px; color:var(--muted)}
-.search{display:flex; gap:10px; margin:16px 0 10px}
-.search input{flex:1; padding:14px 16px; border-radius:12px; border:1px solid rgba(148,163,184,.2); background:#0b1220; color:var(--text); outline:none}
-.search input::placeholder{color:#64748b}
-.search button{padding:14px 16px; border-radius:12px; border:0; background:linear-gradient(135deg, var(--brand), var(--brand-2)); font-weight:700}
+      <div class="ml-auto flex gap-3 items-center">
+        <a href="#" class="px-3 py-2 rounded-full text-slate-400 hover:bg-slate-600/20 hover:text-gray-100">Cursos</a>
+        <a href="#" class="px-3 py-2 rounded-full text-slate-400 hover:bg-slate-600/20 hover:text-gray-100">Nosotros</a>
+        <a href="#"
+          class="px-4 py-2 rounded-full font-bold bg-gradient-to-r from-green-500 to-cyan-500 text-slate-900">Empieza
+          ahora</a>
+      </div>
+    </nav>
+  </header>
 
+  <!-- Hero -->
+  <section class="py-12 max-w-6xl mx-auto px-6">
+    <div class="grid md:grid-cols-2 gap-6 items-center">
+      <div>
+        <span class="inline-flex items-center gap-2 px-3 py-1 border border-slate-600/30 rounded-full text-slate-400">
+          🚀 Aprende habilidades prácticas
+        </span>
+        <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mt-4">Academia Digital para tu Familia</h1>
+        <p class="text-slate-400 mt-3 mb-5">Cursos prácticos para impulsar tu futuro y el de tu familia.</p>
 
-.filters{display:flex; gap:10px; flex-wrap:wrap; margin:10px 0 0}
-.chip{padding:8px 12px; border-radius:999px; background:rgba(148,163,184,.12); border:1px dashed rgba(148,163,184,.2); color:var(--muted); cursor:pointer}
-.chip.active{background:rgba(34,197,94,.18); color:#d1fae5; border-color:rgba(34,197,94,.45)}
+        <!-- Search -->
+        <div class="flex gap-2 mb-4">
+          <input type="text" placeholder="Buscar cursos..."
+            class="flex-1 px-4 py-3 rounded-xl border border-slate-600/30 bg-slate-800 text-gray-200 placeholder-slate-500 outline-none" />
+          <button
+            class="px-4 py-3 rounded-xl font-bold bg-gradient-to-r from-green-500 to-cyan-500 text-slate-900">Buscar</button>
+        </div>
 
+        <!-- Filtros -->
+        <div class="flex gap-2 flex-wrap">
+          <span
+            class="px-3 py-1 rounded-full border border-green-500/40 bg-green-500/20 text-green-100 cursor-pointer">Tecnología</span>
+          <span
+            class="px-3 py-1 rounded-full border border-slate-600/30 bg-slate-700/30 text-slate-400 cursor-pointer">Marketing</span>
+          <span
+            class="px-3 py-1 rounded-full border border-slate-600/30 bg-slate-700/30 text-slate-400 cursor-pointer">Finanzas</span>
+          <span
+            class="px-3 py-1 rounded-full border border-slate-600/30 bg-slate-700/30 text-slate-400 cursor-pointer">Diseño</span>
+        </div>
+      </div>
 
-.panel{background:linear-gradient(to bottom right, rgba(255,255,255,.04), rgba(255,255,255,.02)); border:1px solid rgba(148,163,184,.14); border-radius:var(--radius); box-shadow:var(--shadow)}
+      <div class="bg-gradient-to-br from-green-500/20 to-cyan-500/20 rounded-2xl p-12 shadow-lg">
+        <h2 class="text-2xl font-bold mb-4">Aprende con expertos</h2>
+        <p class="text-slate-300">Accede a cursos 100% en línea, diseñados para personas que quieren mejorar sus
+          habilidades y crecer en el mundo digital.</p>
+      </div>
+    </div>
+  </section>
 
+  <!-- Cursos -->
+  <section class="py-10 max-w-6xl mx-auto px-6">
+    <h2 class="text-2xl font-bold mb-6">Cursos destacados</h2>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
 
-.courses{padding:26px 0 40px}
-.grid{display:grid; grid-template-columns: repeat(3, 1fr); gap:18px}
-@media (max-width: 900px){ .hero-grid{grid-template-columns:1fr} .grid{grid-template-columns: repeat(2, 1fr);} }
-@media (max-width: 620px){ .grid{grid-template-columns: 1fr;} }
+      <!-- Card 1 -->
+      <div class="rounded-2xl overflow-hidden bg-slate-800 shadow-lg">
+        <div class="h-36 bg-gradient-to-br from-green-500/20 to-cyan-500/20 grid place-items-center">
+          <svg class="w-12 h-12 text-white/70" fill="none" stroke="currentColor" stroke-width="2"
+            viewBox="0 0 24 24">
+            <path d="M12 6v6l4 2"></path>
+          </svg>
+        </div>
+        <div class="p-4">
+          <div class="flex flex-wrap gap-2 text-xs mb-2">
+            <span class="px-2 py-1 rounded-full bg-slate-700/30 text-slate-400">Principiante</span>
+            <span class="px-2 py-1 rounded-full bg-slate-700/30 text-slate-400">Marketing</span>
+          </div>
+          <h3 class="font-bold">Curso de Redes Sociales</h3>
+          <div class="flex items-center text-slate-400 text-sm mt-2">
+            <span>8 lecciones</span>
+            <span class="ml-auto font-bold text-green-200">$19</span>
+          </div>
+        </div>
+      </div>
 
+      <!-- Card 2 -->
+      <div class="rounded-2xl overflow-hidden bg-slate-800 shadow-lg">
+        <div class="h-36 bg-gradient-to-br from-cyan-500/20 to-amber-500/20 grid place-items-center">
+          <svg class="w-12 h-12 text-white/70" fill="none" stroke="currentColor" stroke-width="2"
+            viewBox="0 0 24 24">
+            <path d="M12 6v6l4 2"></path>
+          </svg>
+        </div>
+        <div class="p-4">
+          <div class="flex flex-wrap gap-2 text-xs mb-2">
+            <span class="px-2 py-1 rounded-full bg-slate-700/30 text-slate-400">Intermedio</span>
+            <span class="px-2 py-1 rounded-full bg-slate-700/30 text-slate-400">Tecnología</span>
+          </div>
+          <h3 class="font-bold">Introducción a la Programación</h3>
+          <div class="flex items-center text-slate-400 text-sm mt-2">
+            <span>12 lecciones</span>
+            <span class="ml-auto font-bold text-green-200">$29</span>
+          </div>
+        </div>
+      </div>
 
-.card{overflow:hidden; background:var(--card)}
-.thumb{height:140px; background:linear-gradient(135deg, rgba(34,197,94,.18), rgba(6,182,212,.18)); display:grid; place-items:center}
-.thumb svg{opacity:.8}
-.card-body{padding:14px}
-.badges{display:flex; gap:8px; margin:8px 0 10px; flex-wrap:wrap}
-.badge{font-size:12px; padding:4px 8px; border-radius:999px; background:rgba(148,163,184,.12); color:var(--muted); border:1px solid rgba(148,163,184,.18)}
-.title{font-weight:800; letter-spacing:.2px}
-.meta{display:flex; align-items:center; gap:10px; color:var(--muted); font-size:14px}
-.price{margin-left:auto; font-weight:800; color:#d1fae5}
+      <!-- Card 3 -->
+      <div class="rounded-2xl overflow-hidden bg-slate-800 shadow-lg">
+        <div class="h-36 bg-gradient-to-br from-amber-500/20 to-red-500/20 grid place-items-center">
+          <svg class="w-12 h-12 text-white/70" fill="none" stroke="currentColor" stroke-width="2"
+            viewBox="0 0 24 24">
+            <path d="M12 6v6l4 2"></path>
+          </svg>
+        </div>
+        <div class="p-4">
+          <div class="flex flex-wrap gap-2 text-xs mb-2">
+            <span class="px-2 py-1 rounded-full bg-slate-700/30 text-slate-400">Avanzado</span>
+            <span class="px-2 py-1 rounded-full bg-slate-700/30 text-slate-400">Finanzas</span>
+          </div>
+          <h3 class="font-bold">Inversiones Inteligentes</h3>
+          <div class="flex items-center text-slate-400 text-sm mt-2">
+            <span>10 lecciones</span>
+            <span class="ml-auto font-bold text-green-200">$39</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-700/40 py-6 mt-10">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
+      <p class="text-slate-400 text-sm">© 2025 SkillUp Familia — Todos los derechos reservados</p>
+      <div class="flex gap-4 text-slate-400 text-sm">
+        <a href="#" class="hover:text-gray-100">Privacidad</a>
+        <a href="#" class="hover:text-gray-100">Términos</a>
+        <a href="#" class="hover:text-gray-100">Contacto</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
