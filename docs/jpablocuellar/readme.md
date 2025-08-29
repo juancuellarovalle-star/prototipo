@@ -39,15 +39,28 @@ Por favor dame diferentes ideas de soluciones tecnológicas que puedan ayudar a 
 facilitar estos pagos."*
 ## RESPUESTA 
 
-1. **Aplicación móvil con recordatorios automáticos**  
-   Una app sencilla que avise con notificaciones cuando se acerque la fecha de pago.  
+### 1) Aplicación móvil con recordatorios automáticos  
+**Descripción:** Una app sencilla que avise con notificaciones cuando se acerque la fecha de pago de los servicios públicos. Puede incluir alertas personalizadas y sincronización con el calendario del celular.  
 
-2. **Calendario compartido para la familia**  
-   Un calendario digital donde todos los integrantes puedan ver las fechas de vencimiento y recibir alertas.  
+**Público objetivo:** Familias y personas que tienen dificultades para recordar fechas de vencimiento de recibos.  
 
-3. **Aplicación que centraliza los pagos**  
-   Una plataforma que reúna todos los servicios públicos en un solo lugar, para pagarlos sin confusión.  
+**Problema que resuelve:** Muchas familias se atrasan en los pagos porque olvidan las fechas. Esta app les recuerda a tiempo y evita recargos o cortes de servicio.  
 
+
+### 2) Calendario compartido para la familia  
+**Descripción:** Un calendario digital en el que todos los miembros de la familia pueden consultar las fechas de vencimiento de los servicios públicos. Se pueden programar alertas y roles para que distintos integrantes participen en la organización.  
+
+**Público objetivo:** Familias que desean organizarse mejor y distribuir responsabilidades en el hogar.  
+
+**Problema que resuelve:** El pago de servicios suele recaer en una sola persona, lo que genera confusión o sobrecarga. Con el calendario compartido se reparte la responsabilidad y se evita el olvido.  
+
+
+### 3) Aplicación que centraliza los pagos  
+**Descripción:** Una plataforma que reúne todos los servicios públicos en un solo lugar, permitiendo gestionarlos y pagarlos sin confusión. Ofrece historial de pagos, recordatorios automáticos y reportes de gastos.  
+
+**Público objetivo:** Familias y usuarios que manejan varios recibos y buscan una solución práctica y centralizada.  
+
+**Problema que resuelve:** La dispersión de recibos y la confusión al pagar diferentes servicios en distintas plataformas. Centraliza todo y mejora la organización financiera del hogar.  
 
 # SOLUCIONES TECNOLÓGICAS
 1. **Aplicación móvil con recordatorios automáticos**  
