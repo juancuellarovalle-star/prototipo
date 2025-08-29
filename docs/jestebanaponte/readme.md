@@ -17,6 +17,8 @@ de acompañamiento.
 
 DIAGRAMA EN CODIGO MERMAID
 
+##Arbol De Problemas 
+```mermaid
 graph TD 
 
  
