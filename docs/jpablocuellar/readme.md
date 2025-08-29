@@ -37,7 +37,7 @@ con el pago de los servicios públicos. Normalmente se atrasan, se confunden con
 o se olvidan de las fechas de vencimiento, lo que trae problemas económicos y de convivencia.
 Por favor dame diferentes ideas de soluciones tecnológicas que puedan ayudar a organizar y
 facilitar estos pagos."*
-## RESPUESTA 
+## SOLUCIONES TECNOLÓGICAS
 
 ### 1) Aplicación móvil con recordatorios automáticos  
 **Descripción:** Una app sencilla que avise con notificaciones cuando se acerque la fecha de pago de los servicios públicos. Puede incluir alertas personalizadas y sincronización con el calendario del celular.  
@@ -61,16 +61,6 @@ facilitar estos pagos."*
 **Público objetivo:** Familias y usuarios que manejan varios recibos y buscan una solución práctica y centralizada.  
 
 **Problema que resuelve:** La dispersión de recibos y la confusión al pagar diferentes servicios en distintas plataformas. Centraliza todo y mejora la organización financiera del hogar.  
-
-# SOLUCIONES TECNOLÓGICAS
-1. **Aplicación móvil con recordatorios automáticos**  
-   Una app sencilla que avise con notificaciones cuando se acerque la fecha de pago.  
-
-2. **Calendario compartido para la familia**  
-   Un calendario digital donde todos puedan ver las fechas de vencimiento y recibir alertas.  
-
-3. **Aplicación que centraliza los pagos**  
-   Una plataforma que reúna todos los servicios públicos en un solo lugar, para pagarlos sin confusión.  
 
 # IDEA SELECCIONADA
 Decidí quedarme con la **aplicación que centraliza los pagos de los servicios públicos en un solo lugar**, porque es la que más se ajusta a la problemática.  
