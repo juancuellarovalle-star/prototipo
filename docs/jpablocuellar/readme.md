@@ -28,6 +28,7 @@ facilitar estos pagos."*
 Decidí quedarme con la **aplicación que centraliza los pagos de los servicios públicos en un solo lugar**, porque es la que más se ajusta a la problemática.  
 Es más práctica que las otras dos ideas, ayuda a evitar confusiones y permite tener todo organizado en un mismo espacio, lo cual facilita que la familia pueda cumplir con los pagos a tiempo sin complicarse tanto.
 ## ÁRBOL DE PROBLEMAS
+```mermaid
 graph TD
     %% Nodo central: Problema
     P[Problemas en el pago de servicios públicos]
