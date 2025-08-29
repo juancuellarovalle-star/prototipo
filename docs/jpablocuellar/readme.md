@@ -37,6 +37,17 @@ con el pago de los servicios públicos. Normalmente se atrasan, se confunden con
 o se olvidan de las fechas de vencimiento, lo que trae problemas económicos y de convivencia.
 Por favor dame diferentes ideas de soluciones tecnológicas que puedan ayudar a organizar y
 facilitar estos pagos."*
+## RESPUESTA 
+
+1. **Aplicación móvil con recordatorios automáticos**  
+   Una app sencilla que avise con notificaciones cuando se acerque la fecha de pago.  
+
+2. **Calendario compartido para la familia**  
+   Un calendario digital donde todos los integrantes puedan ver las fechas de vencimiento y recibir alertas.  
+
+3. **Aplicación que centraliza los pagos**  
+   Una plataforma que reúna todos los servicios públicos en un solo lugar, para pagarlos sin confusión.  
+
 
 # SOLUCIONES TECNOLÓGICAS
 1. **Aplicación móvil con recordatorios automáticos**  
